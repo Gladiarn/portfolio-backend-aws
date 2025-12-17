@@ -1,0 +1,48 @@
+# =============== NODE/NPM ===============
+node_modules/           # Dependencies - downloaded packages
+npm-debug.log*         # NPM error logs
+yarn-debug.log*        # Yarn error logs
+yarn-error.log*        # Yarn error logs
+.pnp*                  # Yarn PnP files
+
+# =============== SERVERLESS/AWS ===============
+.serverless/           # Serverless deployment artifacts
+.serverless-offline/   # Local serverless offline cache
+
+# =============== ENVIRONMENT VARIABLES ===============
+.env                   # SECRETS: Database URLs, API keys
+.env.local             # Local environment overrides
+.env.*.local           # Any other local env files
+.env.development       # Development environment
+.env.production        # Production environment
+
+# =============== LOGS ===============
+*.log                  # Any log files
+logs/                  # Logs directory
+*.pid                  # Process ID files
+
+# =============== OPERATING SYSTEM ===============
+.DS_Store              # macOS folder metadata
+.DS_Store?
+._*                    # macOS resource fork files
+.Spotlight-V100
+.Trashes
+ehthumbs.db            # Windows thumbnail cache
+Thumbs.db              # Windows thumbnail cache
+desktop.ini            # Windows folder customization
+
+# =============== CODE EDITORS/IDEs ===============
+.vscode/               # Visual Studio Code settings
+.idea/                 # JetBrains IDE settings
+*.swp                  # Vim swap files
+*.swo                  # Vim swap files
+*.swn                  # Vim swap files
+
+# =============== TESTING ===============
+coverage/              # Test coverage reports
+.nyc_output/           # Istanbul test coverage
+
+# =============== BUILD OUTPUTS ===============
+dist/                  # Compiled/built code (if any)
+build/                 # Build output (if any)
+*.tgz                  # Compressed files
