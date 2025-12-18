@@ -9,8 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "serverless": "^4.28.0",
+  "devDependencies": {
+    "serverless": "^4.29.0",
     "serverless-offline": "^14.4.0"
   }
 }
