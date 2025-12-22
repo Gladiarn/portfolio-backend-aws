@@ -1,13 +1,18 @@
 {
   "name": "portfolio-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AWS Lambda backend for portfolio website",
+  "main": "src/handlers/health.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "serverless offline start",
+    "deploy": "serverless deploy",
+    "deploy:prod": "serverless deploy --stage production",
+    "remove": "serverless remove",
+    "logs": "serverless logs -f health -t",
+    "logs:contact": "serverless logs -f contact -t"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["aws", "lambda", "portfolio", "serverless"],
+  "author": "Your Name",
   "license": "ISC",
   "devDependencies": {
     "serverless": "^4.29.0",
