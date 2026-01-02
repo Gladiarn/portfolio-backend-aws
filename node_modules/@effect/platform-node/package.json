@@ -1,0 +1,176 @@
+{
+  "name": "@effect/platform-node",
+  "version": "0.60.5",
+  "description": "Platform specific implementations for the Node.js runtime",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Effect-TS/effect.git",
+    "directory": "packages/platform-node"
+  },
+  "sideEffects": [],
+  "dependencies": {
+    "mime": "^3.0.0",
+    "undici": "^6.19.7",
+    "ws": "^8.18.0",
+    "@effect/platform-node-shared": "^0.15.5"
+  },
+  "peerDependencies": {
+    "@effect/platform": "^0.65.5",
+    "effect": "^3.8.3"
+  },
+  "publishConfig": {
+    "provenance": true
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/dts/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./NodeCommandExecutor": {
+      "types": "./dist/dts/NodeCommandExecutor.d.ts",
+      "import": "./dist/esm/NodeCommandExecutor.js",
+      "default": "./dist/cjs/NodeCommandExecutor.js"
+    },
+    "./NodeContext": {
+      "types": "./dist/dts/NodeContext.d.ts",
+      "import": "./dist/esm/NodeContext.js",
+      "default": "./dist/cjs/NodeContext.js"
+    },
+    "./NodeFileSystem": {
+      "types": "./dist/dts/NodeFileSystem.d.ts",
+      "import": "./dist/esm/NodeFileSystem.js",
+      "default": "./dist/cjs/NodeFileSystem.js"
+    },
+    "./NodeHttpClient": {
+      "types": "./dist/dts/NodeHttpClient.d.ts",
+      "import": "./dist/esm/NodeHttpClient.js",
+      "default": "./dist/cjs/NodeHttpClient.js"
+    },
+    "./NodeHttpPlatform": {
+      "types": "./dist/dts/NodeHttpPlatform.d.ts",
+      "import": "./dist/esm/NodeHttpPlatform.js",
+      "default": "./dist/cjs/NodeHttpPlatform.js"
+    },
+    "./NodeHttpServer": {
+      "types": "./dist/dts/NodeHttpServer.d.ts",
+      "import": "./dist/esm/NodeHttpServer.js",
+      "default": "./dist/cjs/NodeHttpServer.js"
+    },
+    "./NodeHttpServerRequest": {
+      "types": "./dist/dts/NodeHttpServerRequest.d.ts",
+      "import": "./dist/esm/NodeHttpServerRequest.js",
+      "default": "./dist/cjs/NodeHttpServerRequest.js"
+    },
+    "./NodeKeyValueStore": {
+      "types": "./dist/dts/NodeKeyValueStore.d.ts",
+      "import": "./dist/esm/NodeKeyValueStore.js",
+      "default": "./dist/cjs/NodeKeyValueStore.js"
+    },
+    "./NodeMultipart": {
+      "types": "./dist/dts/NodeMultipart.d.ts",
+      "import": "./dist/esm/NodeMultipart.js",
+      "default": "./dist/cjs/NodeMultipart.js"
+    },
+    "./NodePath": {
+      "types": "./dist/dts/NodePath.d.ts",
+      "import": "./dist/esm/NodePath.js",
+      "default": "./dist/cjs/NodePath.js"
+    },
+    "./NodeRuntime": {
+      "types": "./dist/dts/NodeRuntime.d.ts",
+      "import": "./dist/esm/NodeRuntime.js",
+      "default": "./dist/cjs/NodeRuntime.js"
+    },
+    "./NodeSink": {
+      "types": "./dist/dts/NodeSink.d.ts",
+      "import": "./dist/esm/NodeSink.js",
+      "default": "./dist/cjs/NodeSink.js"
+    },
+    "./NodeSocket": {
+      "types": "./dist/dts/NodeSocket.d.ts",
+      "import": "./dist/esm/NodeSocket.js",
+      "default": "./dist/cjs/NodeSocket.js"
+    },
+    "./NodeStream": {
+      "types": "./dist/dts/NodeStream.d.ts",
+      "import": "./dist/esm/NodeStream.js",
+      "default": "./dist/cjs/NodeStream.js"
+    },
+    "./NodeTerminal": {
+      "types": "./dist/dts/NodeTerminal.d.ts",
+      "import": "./dist/esm/NodeTerminal.js",
+      "default": "./dist/cjs/NodeTerminal.js"
+    },
+    "./NodeWorker": {
+      "types": "./dist/dts/NodeWorker.d.ts",
+      "import": "./dist/esm/NodeWorker.js",
+      "default": "./dist/cjs/NodeWorker.js"
+    },
+    "./NodeWorkerRunner": {
+      "types": "./dist/dts/NodeWorkerRunner.d.ts",
+      "import": "./dist/esm/NodeWorkerRunner.js",
+      "default": "./dist/cjs/NodeWorkerRunner.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "NodeCommandExecutor": [
+        "./dist/dts/NodeCommandExecutor.d.ts"
+      ],
+      "NodeContext": [
+        "./dist/dts/NodeContext.d.ts"
+      ],
+      "NodeFileSystem": [
+        "./dist/dts/NodeFileSystem.d.ts"
+      ],
+      "NodeHttpClient": [
+        "./dist/dts/NodeHttpClient.d.ts"
+      ],
+      "NodeHttpPlatform": [
+        "./dist/dts/NodeHttpPlatform.d.ts"
+      ],
+      "NodeHttpServer": [
+        "./dist/dts/NodeHttpServer.d.ts"
+      ],
+      "NodeHttpServerRequest": [
+        "./dist/dts/NodeHttpServerRequest.d.ts"
+      ],
+      "NodeKeyValueStore": [
+        "./dist/dts/NodeKeyValueStore.d.ts"
+      ],
+      "NodeMultipart": [
+        "./dist/dts/NodeMultipart.d.ts"
+      ],
+      "NodePath": [
+        "./dist/dts/NodePath.d.ts"
+      ],
+      "NodeRuntime": [
+        "./dist/dts/NodeRuntime.d.ts"
+      ],
+      "NodeSink": [
+        "./dist/dts/NodeSink.d.ts"
+      ],
+      "NodeSocket": [
+        "./dist/dts/NodeSocket.d.ts"
+      ],
+      "NodeStream": [
+        "./dist/dts/NodeStream.d.ts"
+      ],
+      "NodeTerminal": [
+        "./dist/dts/NodeTerminal.d.ts"
+      ],
+      "NodeWorker": [
+        "./dist/dts/NodeWorker.d.ts"
+      ],
+      "NodeWorkerRunner": [
+        "./dist/dts/NodeWorkerRunner.d.ts"
+      ]
+    }
+  }
+}

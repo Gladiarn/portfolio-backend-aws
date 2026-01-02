@@ -1,0 +1,37 @@
+import { FileSystem, Error as PlatformError } from '@effect/platform';
+import { Effect } from 'effect';
+declare const FS: {
+    readonly access: (path: string, options?: FileSystem.AccessFileOptions | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly copy: (fromPath: string, toPath: string, options?: FileSystem.CopyOptions | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly copyFile: (fromPath: string, toPath: string) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly chmod: (path: string, mode: number) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly chown: (path: string, uid: number, gid: number) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly exists: (path: string) => Effect.Effect<boolean, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly link: (fromPath: string, toPath: string) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly makeDirectory: (path: string, options?: FileSystem.MakeDirectoryOptions | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly makeTempDirectory: (options?: FileSystem.MakeTempDirectoryOptions | undefined) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly makeTempDirectoryScoped: (options?: FileSystem.MakeTempDirectoryOptions | undefined) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem | import("effect/Scope").Scope>;
+    readonly makeTempFile: (options?: FileSystem.MakeTempFileOptions | undefined) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly makeTempFileScoped: (options?: FileSystem.MakeTempFileOptions | undefined) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem | import("effect/Scope").Scope>;
+    readonly open: (path: string, options?: FileSystem.OpenFileOptions | undefined) => Effect.Effect<FileSystem.File, PlatformError.PlatformError, FileSystem.FileSystem | import("effect/Scope").Scope>;
+    readonly readDirectory: (path: string, options?: FileSystem.ReadDirectoryOptions | undefined) => Effect.Effect<string[], PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly readFile: (path: string) => Effect.Effect<Uint8Array, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly readFileString: (path: string, encoding?: string | undefined) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly readLink: (path: string) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly realPath: (path: string) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly remove: (path: string, options?: FileSystem.RemoveOptions | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly rename: (oldPath: string, newPath: string) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly stat: (path: string) => Effect.Effect<FileSystem.File.Info, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly symlink: (fromPath: string, toPath: string) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly truncate: (path: string, length?: FileSystem.SizeInput | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly utimes: (path: string, atime: number | Date, mtime: number | Date) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly writeFile: (path: string, data: Uint8Array, options?: FileSystem.WriteFileOptions | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+    readonly writeFileString: (path: string, data: string, options?: FileSystem.WriteFileStringOptions | undefined) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+};
+export declare const makePath: (p: string) => Effect.Effect<void, PlatformError.PlatformError, FileSystem.FileSystem>;
+export declare const safeFileExists: (p: string) => Effect.Effect<boolean, never, FileSystem.FileSystem>;
+export declare const safeFileRemove: (p: string) => Effect.Effect<void, never, FileSystem.FileSystem>;
+export declare const makeTempPathScoped: (dirName: string) => Effect.Effect<string, PlatformError.PlatformError, FileSystem.FileSystem | import("effect/Scope").Scope>;
+export declare const FSyncLayer: import("effect/Layer").Layer<FileSystem.FileSystem, never, never>;
+export default FS;
+//# sourceMappingURL=effect-fs.d.ts.map
