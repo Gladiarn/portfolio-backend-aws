@@ -1,0 +1,6 @@
+{
+  "main": "../dist/cjs/NodeHttpServerRequest.js",
+  "module": "../dist/esm/NodeHttpServerRequest.js",
+  "types": "../dist/dts/NodeHttpServerRequest.d.ts",
+  "sideEffects": []
+}
