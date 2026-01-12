@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "outDir": ".build",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "types": ["node"],
+    "sourceMap": true,
+    "declaration": false,
+    "noEmit": false
+  },
+  "include": ["src/**/*", "serverless.ts"],
+  "exclude": ["node_modules", ".build"]
+}
