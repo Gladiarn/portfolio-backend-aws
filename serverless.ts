@@ -1,10 +1,7 @@
-// serverless.ts
 import type { AWS } from '@serverless/typescript';
 
 const serverlessConfiguration: AWS = {
   service: 'portfolio-backend-aws',
-  
-  frameworkVersion: '3',
   
   provider: {
     name: 'aws',
